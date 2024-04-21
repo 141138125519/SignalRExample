@@ -36,7 +36,7 @@ namespace SignalRExample.Worker
         {
             try
             {
-                await _randomHub.Clients.All.ReceiveRandom(random.Next(0, 100_000));
+                await _randomHub.Clients.All.DisplayRandom(random.Next(0, 100_000));
             }
             catch (Exception ex)
             {

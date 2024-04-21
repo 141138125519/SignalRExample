@@ -4,7 +4,7 @@
 var connection = new signalR.HubConnectionBuilder().withUrl("/random").build();
 
 // Define response to receiving "ReceiveRandom" 
-connection.on("ReceiveRandom", function (randomNum) {
+connection.on("DisplayRandom", function (randomNum) {
     var randDisplay = document.getElementById("randomNum");
     randDisplay.textContent = `From Server: ${randomNum}`;
 });

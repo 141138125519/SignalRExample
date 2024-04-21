@@ -2,6 +2,6 @@
 {
     public interface IRandomClient
     {
-        Task ReceiveRandom(int randNum);
+        Task DisplayRandom(int randNum);
     }
 }
